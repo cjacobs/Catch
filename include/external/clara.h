@@ -83,7 +83,7 @@ namespace Tbc {
             std::size_t indent = _attr.initialIndent != std::string::npos
                 ? _attr.initialIndent
                 : _attr.indent;
-            std::string remainder = _str;
+            std::string remainder = _str + '\n';
 
             while( !remainder.empty() ) {
                 if( lines.size() >= 1000 ) {
